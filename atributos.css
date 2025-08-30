@@ -1,0 +1,46 @@
+/* Base */
+:root { --bg:#f7f9ff; --brand:#2563eb; --line:#e5e7eb; --panel:#ffffff; }
+[lang|="es"] { font-variant-ligatures: common-ligatures; }
+html, body { margin:0; font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#0f172a; }
+
+
+/* Nav y estados por atributos */
+nav [aria-current="page"] { font-weight:700; text-decoration:underline; }
+[rel~="external"] { position:relative; }
+[rel~="external"]::after { content:" ↗"; }
+
+
+/* Grid de cards */
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:18px; padding:24px; }
+[data-role="card"] { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:16px; box-shadow:0 4px 10px rgba(0,0,0,.06); }
+[data-role="card"][data-tipo="frio"] { border-color:#67e8f9; }
+[data-role="card"][data-tipo="caliente"] { border-color:#fca5a5; }
+img[loading="lazy"] { filter: saturate(1.1); }
+
+
+/* Botones variantes por atributo */
+[class^="btn"] { text-decoration:none; display:inline-block; padding:8px 12px; border-radius:10px; }
+[class^="btn"][class$="primary"] { background:var(--brand); color:white; }
+[class^="btn"][class$="outline"] { background:#fff; color:#1f2937; border:1px solid var(--line); }
+
+
+/* Precios con data-attr */
+.price[data-currency="PEN"]::after { content:" PEN"; font-size:12px; color:#64748b; }
+.price[data-currency="USD"]::after { content:" USD"; font-size:12px; color:#64748b; }
+
+
+/* Enlaces por patrón */
+a[href^="https"] { color:#0ea5e9; }
+a[href$=".pdf"] { color:#7c3aed; font-weight:600; }
+a[href*="ucsm"] { color:#ef4444; }
+a[href^="#"] { color:#16a34a; }
+
+
+/* Form por tipo/estado */
+input[required] { border:1px dashed #f59e0b; }
+input[type="email"] { border:1px solid #93c5fd; }
+select[disabled], option[disabled] { opacity:.6; }
+
+
+/* Table demo (si fuera añadida) */
+[role="banner"] h1[title] { cursor:help; }

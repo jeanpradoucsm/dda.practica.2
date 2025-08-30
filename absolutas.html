@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Medidas absolutas</title>
+	<link rel="stylesheet" href="./medidasabsolutas.css" />
+</head>
+<body>
+	<header class="header">
+		<h1>Showroom de medidas absolutas</h1>
+		<p>cm · mm · Q · in · pc · pt · px</p>
+	</header>
+
+
+	<main>
+<!-- Regla visual en cm/mm -->
+<section class="ruler" aria-labelledby="t-ruler">
+	<h2 id="t-ruler">Regla (centímetros y milímetros)</h2>
+	<div class="cm-strip" title="1cm = 10mm"></div>
+	<div class="mm-strip" title="mm ticks"></div>
+</section>
+
+
+<!-- Tarjetas con medidas fijas -->
+<section class="cards" aria-labelledby="t-cards">
+	<h2 id="t-cards">Cards con dimensiones mixtas</h2>
+	<article class="card cm">
+		<h3>Card en cm</h3>
+		<p>Anchura definida en <strong>cm</strong> y bordes en <strong>mm</strong>.</p>
+	</article>
+	<article class="card in">
+		<h3>Card en in/pt</h3>
+		<p>Tipografía en <strong>pt</strong> y padding en <strong>in</strong>.</p>
+	</article>
+	<article class="card px">
+		<h3>Card en px/pc</h3>
+		<p>Bordes en <strong>px</strong>, sombras y spacing en <strong>pc</strong>.</p>
+	</article>
+</section>
+
+
+<!-- Tabla comparativa -->
+<section class="comparativa" aria-labelledby="t-comp">
+	<h2 id="t-comp">Comparativa de tamaños</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Unidad</th>
+				<th>Bloque (ancho x alto)</th>
+				<th>Detalle</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>cm/mm</td>
+				<td><div class="box box-cm" aria-label="cuadro en cm"></div></td>
+				<td>1cm = 10mm</td>
+			</tr>
+			<tr>
+				<td>in/pt</td>
+				<td><div class="box box-in" aria-label="cuadro en pulgadas"></div></td>
+				<td>1in = 72pt</td>
+			</tr>
+			<tr>
+				<td>pc/px</td>
+				<td><div class="box box-px" aria-label="cuadro en píxeles"></div></td>
+				<td>1pc = 12pt | 96px ≈ 1in</td>
+			</tr>
+			<tr>
+				<td>Q</td>
+				<td><div class="box box-q" aria-label="cuadro en Q"></div></td>
+				<td>1Q = 0.25mm</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+</main>
+
+
+<footer class="footer">© 2025 Café Andino</footer>
+</body>
+</html>

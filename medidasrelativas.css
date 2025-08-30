@@ -1,0 +1,36 @@
+:root{ --ink:#0f172a; --muted:#64748b; --brand:#0ea5e9; --panel:#ffffff; --line:#e5e7eb; font-size:16px; }
+*{box-sizing:border-box}
+html,body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+
+
+/* Hero con unidades viewport */
+.hero{min-height:60vh;padding:6vmin 4vmax;background:linear-gradient(135deg,#cffafe,#e0f2fe);text-align:center;border-bottom:1px solid var(--line)}
+.hero h1{margin:0 0 1lh 0;font-size:clamp(1.8rem,4vw,3rem);color:#0c4a6e}
+.hero .lead{margin:0 auto 2lh auto;max-width:60ch;color:#0369a1}
+.hero .btn{display:inline-block;padding:.75em 1.25em;border-radius:1em;background:#0ea5e9;color:#fff;text-decoration:none;box-shadow:0 .5rem 1rem rgba(14,165,233,.25)}
+
+
+/* Grid fluido */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(28ch,1fr));gap:2rem;padding:2rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:1rem;padding:1.25em;min-height:12lh;box-shadow:0 .75rem 1.5rem rgba(2,6,23,.06)}
+.card h3{margin-top:0;color:#075985}
+
+
+/* Panel escalable */
+.panel-escala{padding:2rem}
+.scale{background:#fff;border:1px dashed #bae6fd;border-radius:1rem;padding:1em;margin:.75rem 0;color:#075985}
+.demo-rem{font-size:2.5rem}
+.demo-em{width:20em}
+.demo-ch{width:45ch}
+.demo-lh{height:8lh;display:flex;align-items:center;justify-content:center}
+.demo-viewport{width:40vmin;height:20vmax}
+
+
+/* Tabla de referencia */
+.tabla{padding:0 2rem 2rem}
+.tabla table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:1rem;overflow:hidden}
+.tabla th,.tabla td{padding:1em;border-bottom:1px solid var(--line);text-align:left}
+.tabla thead th{background:#e0f2fe;color:#075985}
+
+
+.footer{text-align:center;padding:2rem;color:var(--muted)}

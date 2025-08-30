@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Medidas relativas</title>
+	<link rel="stylesheet" href="./medidasrelativas.css" />
+</head>
+<body>
+	<header class="hero">
+		<h1>Layout fluido con unidades relativas</h1>
+		<p class="lead">em · rem · ex · ch · lh · vw · vh · vmin · vmax</p>
+		<a class="btn" href="#demo">Ver demo</a>
+	</header>
+
+
+	<main id="demo">
+<!-- Grid responsive en vw/vh -->
+<section class="grid" aria-labelledby="t-grid">
+	<h2 id="t-grid">Grid fluido</h2>
+	<article class="card">
+		<h3>Tarjeta 1</h3>
+		<p>Padding en <strong>em</strong>, tipografía en <strong>rem</strong>.</p>
+	</article>
+	<article class="card">
+		<h3>Tarjeta 2</h3>
+		<p>Anchos mínimos con <strong>ch</strong> y alturas con <strong>lh</strong>.</p>
+	</article>
+	<article class="card">
+		<h3>Tarjeta 3</h3>
+		<p>Panel que responde a <strong>vmin/vmax</strong>.</p>
+	</article>
+</section>
+
+
+<!-- Panel escalable -->
+<section class="panel-escala" aria-labelledby="t-escala">
+	<h2 id="t-escala">Tipografía y cajas escalables</h2>
+	<div class="scale demo-rem">Título en 2.5rem</div>
+	<div class="scale demo-em">Bloque en 20em de ancho</div>
+	<div class="scale demo-ch">Caja de 45ch</div>
+	<div class="scale demo-lh">Altura en 8lh</div>
+	<div class="scale demo-viewport">Caja 40vmin × 20vmax</div>
+</section>
+
+
+<!-- Tabla de referencia -->
+<section class="tabla" aria-labelledby="t-tabla">
+	<h2 id="t-tabla">Referencia rápida</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Unidad</th>
+				<th>Referencia</th>
+				<th>Uso típico</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>em</td><td>Tamaño de fuente del elemento</td><td>Padding, spacing relativo al contexto</td></tr>
+			<tr><td>rem</td><td>Tamaño de fuente del root</td><td>Escala tipográfica consistente</td></tr>
+			<tr><td>ex</td><td>Altura x de la fuente</td><td>Ajustes finos en tipografías</td></tr>
+			<tr><td>ch</td><td>Ancho del «0»</td><td>Líneas de código, inputs fijos</td></tr>
+			<tr><td>lh</td><td>Altura de línea</td><td>Bloques verticales con ritmo</td></tr>
+			<tr><td>vw/vh</td><td>Viewport width/height</td><td>Secciones a pantalla completa</td></tr>
+			<tr><td>vmin/vmax</td><td>Menor/Mayor dimensión viewport</td><td>Layouts hero adaptables</td></tr>
+		</tbody>
+	</table>
+</section>
+</main>
+
+
+<footer class="footer">© 2025 Café Andino</footer>
+</body>
+</html>

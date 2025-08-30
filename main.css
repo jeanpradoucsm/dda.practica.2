@@ -1,0 +1,31 @@
+:root { --bg:#f7f9ff; --brand:#2563eb; --panel:#ffffff; --line:#e5e7eb; --muted:#64748b; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif; background:var(--bg); color:#1f2937; }
+
+
+/* Accesibilidad */
+.skip { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+.skip:focus { position:static; width:auto; height:auto; padding:8px 12px; background:#fff; border:2px solid var(--brand); border-radius:8px; }
+
+
+/* Layout base */
+.site-header { background:#eaf2ff; padding:24px; border-bottom:1px solid #dbeafe; }
+.site-nav { display:flex; gap:12px; padding:12px 24px; background:#eff6ff; border-bottom:1px solid #dbeafe; }
+.layout { display:grid; grid-template-columns:1fr 320px; gap:24px; padding:24px; max-width:1100px; margin:0 auto; }
+.panel { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px; }
+.item { padding:12px; border-bottom:1px dashed var(--line); }
+.site-footer { text-align:center; padding:16px; color:var(--muted); }
+
+
+/* Componentes */
+.btn { text-decoration:none; display:inline-block; padding:8px 12px; border-radius:10px; background:#f9fafb; border:1px solid #d1d5db; cursor:pointer; }
+.btn-primary { background:var(--brand); color:white; border-color:var(--brand); }
+.form-box { margin-top:16px; padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; }
+input[type="email"] { width:100%; padding:10px; border:1px solid #cbd5e1; border-radius:10px; }
+figure { margin:16px 0 0 0; }
+img { width:100%; border-radius:12px; border:1px solid var(--line); }
+.muted { font-size:14px; color:var(--muted); }
+
+
+/* Responsivo */
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }

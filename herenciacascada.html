@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Herencia y cascada</title>
+	<link rel="stylesheet" href="./herenciaycascada.css" />
+</head>
+<body>
+	<header class="hero">
+		<h1>Herencia, especificidad y cascada</h1>
+		<p class="subtitle">Demostración visual de prioridades</p>
+	</header>
+
+
+	<main class="content">
+		<section class="typography">
+			<h2>Herencia</h2>
+			<p>Este párrafo hereda <em>color</em> y <strong>font</strong> del contenedor.</p>
+			<div class="nested">
+				<p>Texto anidado — cambiará si modificas el color del contenedor padre.</p>
+			</div>
+		</section>
+
+
+		<section class="specificity">
+			<h2>Especificidad</h2>
+			<button class="btn">.btn (clase)</button>
+			<button id="cta" class="btn">#cta (ID + clase)</button>
+			<button class="btn primary">.btn.primary (2 clases)</button>
+			<button class="btn" style="background:#f59e0b;color:#fff">inline style</button>
+			<p class="note">Observa cuál gana según **inline > !important > ID > clase > elemento > herencia**.</p>
+		</section>
+
+
+		<section class="cascade">
+			<h2>Cascada</h2>
+			<div class="box">Prioridades por origen y orden de aparición.</div>
+		</section>
+	</main>
+
+
+	<footer class="site-footer">© 2025 Café Andino</footer>
+</body>
+</html>

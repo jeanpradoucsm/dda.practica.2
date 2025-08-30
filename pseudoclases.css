@@ -1,0 +1,44 @@
+:root { --brand:#2563eb; --line:#e5e7eb; --bg:#f8fafc; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#0f172a; }
+.site-header { padding:20px; background:#e2e8f0; border-bottom:1px solid var(--line); }
+nav a { margin-right:8px; text-decoration:none; color:#1f2937; }
+nav a:hover { color:var(--brand); } /* :hover */
+nav a:focus { outline:2px solid var(--brand); } /* :focus */
+
+
+/* Lista con posiciones */
+.fancy-list li:first-child { font-weight:700; } /* :first-child */
+.fancy-list li:last-child { color:#059669; } /* :last-child */
+.fancy-list li:nth-child(2) { color:#ef4444; } /* :nth-child */
+.fancy-list li:nth-child(even) { background:#f1f5f9; }
+.fancy-list li:nth-child(odd) { background:#fff; }
+
+
+/* Enlaces estados */
+.cta:active { transform: translateY(1px); } /* :active */
+.muted:visited { color:#6b7280; } /* :visited */
+
+
+/* Form estados de validación */
+input:required { border:1px dashed #f59e0b; } /* :required */
+input:valid { border:1px solid #16a34a; } /* :valid */
+input:invalid { border:1px solid #dc2626; } /* :invalid */
+input:disabled { opacity:.6; } /* :disabled */
+input:checked { box-shadow:0 0 0 2px #34d399 inset; } /* :checked */
+
+
+/* :not para negar */
+.fancy-list li:not(:first-child) { border-top:1px dashed var(--line); }
+
+
+/* details/summary y :focus-visible */
+details { border:1px solid var(--line); border-radius:12px; padding:8px 12px; background:#fff; margin-bottom:10px; }
+summary { cursor:pointer; }
+summary:focus-visible { outline:2px solid var(--brand); }
+
+
+/* Tabs simuladas con :target */
+.tabs { display:flex; gap:8px; padding:12px; }
+.tab { padding:8px 12px; border:1px solid var(--line); border-radius:10px; text-decoration:none; color:#111827; }
+.tab:target, .tab:hover { background:#dbeafe; border-color:#93c5fd; } /* :target */

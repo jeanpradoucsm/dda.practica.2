@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>en línea</title>
+</head>
+<body style="margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif; background:#f7f9ff; color:#1f2937;">
+	<a href="#contenido" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Saltar al contenido</a>
+
+
+	<header style="background:#eaf2ff; padding:24px; border-bottom:1px solid #dbeafe;">
+		<h1 style="margin:0;font-size:28px;">Café Andino</h1>
+		<p style="margin:4px 0 0 0;opacity:.8;">Sabores de altura para tu día</p>
+	</header>
+
+
+	<nav aria-label="principal" style="display:flex;gap:12px; padding:12px 24px; background:#eff6ff; border-bottom:1px solid #dbeafe;">
+		<a href="#menu" style="text-decoration:none;padding:8px 12px;border-radius:10px;background:white;border:1px solid #e5e7eb;">Menú</a>
+		<a href="#locales" style="text-decoration:none;padding:8px 12px;border-radius:10px;background:white;border:1px solid #e5e7eb;">Locales</a>
+		<a href="#contacto" style="text-decoration:none;padding:8px 12px;border-radius:10px;background:white;border:1px solid #e5e7eb;">Contacto</a>
+	</nav>
+
+
+	<main id="contenido" style="display:grid;grid-template-columns:1fr 320px;gap:24px;padding:24px;max-width:1100px;margin:0 auto;">
+		<section id="menu" style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:20px;">
+			<h2 style="margin-top:0;">Nuestro menú</h2>
+			<article style="padding:12px;border-bottom:1px dashed #e5e7eb;">
+				<h3 style="margin:0 0 6px 0;">Capuchino</h3>
+				<p style="margin:0 0 8px 0;">Espuma cremosa y aroma intenso.</p>
+				<button type="button" style="padding:8px 12px;border-radius:10px;border:1px solid #d1d5db;background:#f9fafb;cursor:pointer;">Agregar</button>
+			</article>
+			<article style="padding:12px;border-bottom:1px dashed #e5e7eb;">
+				<h3 style="margin:0 0 6px 0;">Americano</h3>
+				<p style="margin:0 0 8px 0;">Suave y equilibrado.</p>
+				<button type="button" style="padding:8px 12px;border-radius:10px;border:1px solid #d1d5db;background:#f9fafb;cursor:pointer;">Agregar</button>
+			</article>
+			<form aria-labelledby="suscripcion" style="margin-top:16px;padding:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;">
+				<h3 id="suscripcion" style="margin-top:0;">Suscríbete</h3>
+				<label for="email" style="display:block;margin-bottom:6px;">Correo electrónico</label>
+				<input id="email" name="email" type="email" required placeholder="tucorreo@ejemplo.com" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:10px;" />
+				<button style="margin-top:10px;padding:10px 14px;border:none;border-radius:10px;background:#2563eb;color:white;cursor:pointer;">Enviar</button>
+			</form>
+		</section>
+
+
+		<aside id="locales" style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:20px;">
+			<h2 style="margin-top:0;">Locales</h2>
+			<ul style="margin:0;padding-left:18px;">
+				<li>Arequipa Centro</li>
+				<li>Cayma</li>
+				<li>Yanahuara</li>
+			</ul>
+			<figure style="margin:16px 0 0 0;">
+				<img src="https://picsum.photos/seed/cafe/640/360" alt="Taza de café sobre mesa" style="width:100%;border-radius:12px;border:1px solid #e5e7eb;" />
+				<figcaption style="font-size:14px;opacity:.8;">Ambiente cálido y moderno</figcaption>
+			</figure>
+		</aside>
+	</main>
+
+
+	<footer style="text-align:center;padding:16px;opacity:.8;">© 2025 Café Andino</footer>
+</body>
+</html>

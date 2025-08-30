@@ -1,0 +1,35 @@
+/* CAPA BASE */
+:root{ --ink:#0f172a; --muted:#64748b; --brand:#2563eb; --line:#e5e7eb; --panel:#ffffff; }
+*{box-sizing:border-box}
+html,body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f8fafc;color:var(--ink)}
+
+
+/* Herencia: color de texto heredado por descendientes */
+.content{ color:#0c4a6e; }
+.content em{ font-style:italic; }
+.content strong{ font-weight:700; }
+
+
+/* Tipografía y cajas */
+.hero{ padding:24px; background:linear-gradient(135deg,#e0f2fe,#dbeafe); border-bottom:1px solid var(--line); text-align:center; }
+.content{ max-width:1100px; margin:0 auto; padding:24px; }
+.nested{ padding:16px; border:1px dashed var(--line); border-radius:12px; background:#fff; }
+
+
+/* Especificidad escalonada */
+button{ background:#e2e8f0; border:1px solid var(--line); color:#111827; padding:10px 14px; border-radius:12px; cursor:pointer; }
+.btn{ background:#dbeafe; } /* clase */
+.btn.primary{ background:#60a5fa; color:#fff; } /* dos clases */
+#cta{ background:#1d4ed8; color:#fff; } /* ID */
+/* Forzado con !important (simulación de componente de diseño) */
+.specificity .btn{ background:#93c5fd !important; }
+
+
+/* Cascada: reglas posteriores sobrescriben si la especificidad es igual */
+.box{ background:#fff; border:1px solid var(--line); padding:16px; border-radius:12px; }
+.box{ background:#f1f5f9; } /* misma especificidad, gana la última */
+
+
+/* Regla menos específica anulada por otra más específica */
+.typography p{ color:#075985; } /* elemento descendiente */
+.typography .nested p{ color:#0ea5e9; } /* clase + descendiente gana */

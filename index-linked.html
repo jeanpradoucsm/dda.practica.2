@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>css vinculado</title>
+	<link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+	<a class="skip" href="#contenido">Saltar al contenido</a>
+	<header class="site-header">
+		<h1>Café Andino</h1>
+		<p>Sabores de altura para tu día</p>
+	</header>
+	<nav aria-label="principal" class="site-nav">
+		<a href="#menu" class="btn">Menú</a>
+		<a href="#locales" class="btn">Locales</a>
+		<a href="#contacto" class="btn">Contacto</a>
+	</nav>
+	<main id="contenido" class="layout">
+		<section id="menu" class="panel">
+			<h2>Nuestro menú</h2>
+			<article class="item">
+				<h3>Capuchino</h3>
+				<p>Espuma cremosa y aroma intenso.</p>
+				<button type="button" class="btn">Agregar</button>
+			</article>
+			<article class="item">
+				<h3>Americano</h3>
+				<p>Suave y equilibrado.</p>
+				<button type="button" class="btn">Agregar</button>
+			</article>
+			<form aria-labelledby="suscripcion" class="form-box">
+				<h3 id="suscripcion">Suscríbete</h3>
+				<label for="email">Correo electrónico</label>
+				<input id="email" name="email" type="email" required placeholder="tucorreo@ejemplo.com" />
+				<button class="btn btn-primary">Enviar</button>
+			</form>
+		</section>
+		<aside id="locales" class="panel">
+			<h2>Locales</h2>
+			<ul>
+				<li>Arequipa Centro</li>
+				<li>Cayma</li>
+				<li>Yanahuara</li>
+			</ul>
+			<figure>
+				<img src="https://picsum.photos/seed/cafe/640/360" alt="Taza de café sobre mesa" />
+				<figcaption class="muted">Ambiente cálido y moderno</figcaption>
+			</figure>
+		</aside>
+	</main>
+	<footer class="site-footer">© 2025 Café Andino</footer>
+</body>
+</html>

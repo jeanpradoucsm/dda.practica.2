@@ -1,0 +1,47 @@
+:root{ --bg:#f8fafc; --ink:#0f172a; --muted:#64748b; --brand:#6d28d9; --accent:#22d3ee; --line:#e5e7eb; }
+*{box-sizing:border-box}
+html,body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.site-header{padding:20px 24px;background:linear-gradient(135deg,#ede9fe,#cffafe);border-bottom:1px solid var(--line)}
+.breadcrumb a{color:#334155;text-decoration:none}
+.layout{display:grid;grid-template-columns:1fr;max-width:1100px;margin:0 auto;padding:24px}
+.catalogo{position:relative}
+
+
+/* MÚLTIPLES (agrupación): mismo estilo a distintos elementos */
+.card h3, .info h3, .sidebar h3 { color:#4c1d95; margin-top:0; }
+.btn, .sidebar a { display:inline-block; padding:8px 12px; border-radius:12px; text-decoration:none; }
+
+
+/* DESCENDIENTE: .catalogo .cards .card p */
+.catalogo .cards .card p { color:#0f172a; }
+
+
+/* HIJO DIRECTO: .catalogo > .info y .catalogo > .sidebar */
+.catalogo > .info { background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; margin-top:16px; }
+.catalogo > .sidebar { position:absolute; right:0; top:0; width:240px; background:#ffffff; border:1px solid var(--line); border-radius:16px; padding:16px; box-shadow:0 10px 24px rgba(2,6,23,.08); }
+
+
+/* ADYACENTE: .sidebar + .legal afecta al primer .legal inmediatamente después */
+.sidebar + .legal { color:#6d28d9; font-weight:600; }
+
+
+/* HERMANOS GENERALES: .legal ~ p (todos los p después de .legal) */
+.legal ~ p { opacity:.7; }
+
+
+/* Tarjetas grid */
+.cards{ list-style:none; padding:0; margin:0 270px 0 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+.card{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; box-shadow:0 8px 20px rgba(2,6,23,.06); }
+.card.destacado{ border-color:#6d28d9; box-shadow:0 12px 28px rgba(109,40,217,.25); }
+.badge{ background:#e0e7ff; color:#3730a3; padding:2px 8px; border-radius:999px; font-size:12px; }
+.badge-hot{ background:#fee2e2; color:#991b1b; }
+.badge-cold{ background:#cffafe; color:#075985; }
+
+
+/* Estilos de botones agrupados */
+.btn{ background:#fff; border:1px solid var(--line); color:#111827; }
+.sidebar a{ background:#ecfeff; border:1px solid #a5f3fc; color:#0e7490; }
+
+
+/* Combinación específica: .cards > .card:first-child a.btn */
+.cards > .card:first-child a.btn { background:#ede9fe; border-color:#c4b5fd; color:#4c1d95; }

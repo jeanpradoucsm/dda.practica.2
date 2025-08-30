@@ -1,0 +1,32 @@
+:root { --brand:#2563eb; --bg:#f8fafc; --line:#e5e7eb; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:#0f172a; }
+.site-header { padding:24px; border-bottom:1px solid var(--line); position:relative; }
+.site-header::after { content:"☕"; position:absolute; right:16px; top:16px; font-size:28px; } /* ::after */
+
+
+/* Hero con ::before y ::after como decoración */
+.hero { position:relative; padding:40px 16px; text-align:center; background:#fff; margin:16px; border-radius:16px; border:1px solid var(--line); }
+.hero::before { content:""; position:absolute; inset:0; background:linear-gradient(135deg, rgba(37,99,235,.08), rgba(16,185,129,.08)); border-radius:16px; } /* ::before */
+.hero .btn { display:inline-block; margin-top:10px; padding:10px 14px; border-radius:10px; border:1px solid #93c5fd; text-decoration:none; }
+.hero .lead::first-line { font-weight:600; } /* ::first-line */
+
+
+/* Lista ordenada con ::marker */
+ol { padding:16px 32px; }
+ol li::marker { color:#2563eb; font-weight:700; } /* ::marker */
+
+
+/* Tipografía inicial con ::first-letter */
+.card h3::first-letter { font-size:150%; color:#2563eb; } /* ::first-letter */
+
+
+/* Placeholder y selection */
+input::placeholder { color:#9ca3af; } /* ::placeholder */
+::selection { background:#fde68a; color:#1f2937; } /* ::selection */
+
+
+/* Cards con numeración decorativa */
+.cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; padding:16px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; position:relative; }
+.card::after { counter-increment: cards; content:"#" counter(cards); position:absolute; top:8px; right:12px; color:#94a3b8; }

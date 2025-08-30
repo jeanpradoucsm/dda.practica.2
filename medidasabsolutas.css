@@ -1,0 +1,37 @@
+:root { --ink:#0f172a; --muted:#64748b; --accent:#7c3aed; --panel:#ffffff; --line:#e5e7eb; }
+*{box-sizing:border-box}
+html,body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#f6f7fb;color:var(--ink)}
+.header{padding:12mm 10mm;background:linear-gradient(135deg,#ede9fe,#e0e7ff);text-align:center;border-bottom:1px solid var(--line)}
+.header h1{margin:0 0 4mm 0;font-size:20pt;color:#4c1d95}
+.header p{margin:0;color:#6d28d9}
+
+
+/* Ruler en cm/mm */
+.ruler{padding:8mm 10mm}
+.cm-strip{height:1cm;background:repeating-linear-gradient(90deg,#1f2937 0,#1f2937 1mm,transparent 1mm,transparent 1cm)}
+.mm-strip{height:8mm;margin-top:3mm;background:repeating-linear-gradient(90deg,#94a3b8 0,#94a3b8 .5mm,transparent .5mm,transparent 1mm)}
+
+
+/* Cards con medidas absolutas distintas */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(5cm,1fr));gap:8mm;padding:10mm}
+.card{background:var(--panel);border:0.6mm solid var(--line);border-radius:6mm;box-shadow:0 .2in .3in rgba(16,24,40,.08);padding:6mm}
+.card h3{margin-top:0;color:#4c1d95}
+.card.cm{width:8cm;border-width:1mm}
+.card.in{width:3.5in;padding:.25in;}
+.card.px{width:420px;box-shadow:0 12px 24px rgba(124,58,237,.2)}
+.card.px p{letter-spacing:.2pc}
+
+
+/* Tabla comparativa */
+.comparativa{padding:0 10mm 12mm}
+.comparativa table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:8mm;overflow:hidden}
+.comparativa th,.comparativa td{padding:6mm;border-bottom:1px solid var(--line);text-align:left}
+.comparativa thead th{background:#ede9fe;color:#4c1d95}
+.box{display:inline-block;background:linear-gradient(135deg,#ddd6fe,#e9d5ff);border:1mm solid #a78bfa;border-radius:3mm}
+.box-cm{width:4cm;height:2cm}
+.box-in{width:2in;height:1in}
+.box-px{width:240px;height:120px}
+.box-q{width:40Q;height:20Q}
+
+
+.footer{text-align:center;padding:8mm;color:var(--muted)}

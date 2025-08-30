@@ -1,0 +1,12 @@
+body { font-family: 'Comic Sans MS', cursive; background:linear-gradient(135deg,#f0f9ff,#dbeafe); margin:0; }
+header { background:#1e3a8a; padding:20px; text-align:center; }
+h1 { color:#facc15; text-shadow:2px 2px #1e293b; font-size:36px; margin-bottom:0; }
+p { margin-top:4px; color:#f1f5f9; }
+nav a { margin:0 8px; text-decoration:none; color:#fef9c3; font-weight:bold; }
+h2 { color:#ec4899; border-bottom:3px dotted #ec4899; margin-top:24px; }
+h3 { color:#10b981; font-style:italic; }
+article { border:3px solid #38bdf8; border-radius:12px; margin-bottom:16px; padding:12px; background:#f0fdfa; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+figure { display:inline-block; margin:12px; }
+img { border-radius:8px; border:2px solid #0ea5e9; }
+figcaption { text-align:center; font-size:14px; }
+footer { background:#1e293b; color:#e2e8f0; text-align:center; padding:12px; margin-top:20px; }

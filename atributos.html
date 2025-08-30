@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<main>
+	<section id="cards" class="grid" aria-labelledby="t-cards">
+		<h2 id="t-cards">Nuestros cafés</h2>
+		<article class="card" data-role="card" data-tipo="caliente">
+			<img src="https://picsum.photos/seed/att1/480/300" alt="Capuchino" loading="lazy" />
+			<h3 class="card-title">Capuchino</h3>
+			<p class="price" data-currency="PEN" data-precio="12.9">S/ 12.90</p>
+			<a class="btn btn-primary" href="/comprar?sku=cap-01" data-action="comprar">Comprar</a>
+		</article>
+
+
+		<article class="card destacado" data-role="card" data-tipo="frio">
+			<img src="https://picsum.photos/seed/att2/480/300" alt="Frappe" />
+			<h3 class="card-title">Frappe</h3>
+			<p class="price" data-currency="PEN" data-precio="15.5">S/ 15.50</p>
+			<a class="btn btn-outline" href="/comprar?sku=frp-02" data-action="comprar">Comprar</a>
+		</article>
+
+
+		<article class="card" data-role="card" data-tipo="caliente" lang="es-PE">
+			<img src="https://picsum.photos/seed/att3/480/300" alt="Americano" />
+			<h3 class="card-title">Americano</h3>
+			<p class="price" data-currency="USD" data-precio="3.2">$ 3.20</p>
+			<a class="btn btn-primary" href="/comprar?sku=ame-03" download>Descargar ficha (PDF)</a>
+		</article>
+	</section>
+
+
+	<section id="enlaces" class="links">
+		<h2>Enlaces útiles</h2>
+		<ul>
+			<li><a href="https://www.ucsm.edu.pe" target="_blank" title="Universidad Católica de Santa María">UCSM</a></li>
+			<li><a href="https://developer.mozilla.org/" target="_blank">MDN Docs</a></li>
+			<li><a href="/assets/menu.pdf">Menú en PDF</a></li>
+			<li><a href="#suscripcion">Ir a suscripción (ancla interna)</a></li>
+		</ul>
+	</section>
+
+
+	<section id="suscripcion" class="subscribe" aria-labelledby="t-sub">
+		<h2 id="t-sub">Suscripción</h2>
+		<form>
+			<label>Correo
+				<input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+			</label>
+			<label>Nombre
+				<input type="text" name="nombre" minlength="3" />
+			</label>
+			<label>Recibir promos
+				<input type="checkbox" name="promos" checked />
+			</label>
+			<label>País
+				<select name="pais">
+					<option value="pe" selected>Perú</option>
+					<option value="cl">Chile</option>
+					<option value="bo" disabled>Bolivia (pronto)</option>
+				</select>
+			</label>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</section>
+</main>
+
+
+<footer>
+	<small>© 2025 Café Andino</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>pseudo‑clases</title>
+	<link rel="stylesheet" href="./pseudoclases.css" />
+</head>
+<body>
+	<header class="site-header">
+		<h1>Pseudo‑clases en acción</h1>
+		<nav>
+			<a href="#listado">Listado</a>
+			<a href="#buscador">Buscador</a>
+			<a href="#acordeon">Acordeón</a>
+		</nav>
+	</header>
+
+
+	<main>
+		<section id="listado">
+			<h2>Lista interactiva</h2>
+			<ul class="fancy-list">
+				<li>Item A</li>
+				<li>Item B</li>
+				<li>Item C</li>
+				<li>Item D</li>
+			</ul>
+			<p>
+				<a href="#buscador" class="cta">Ir al buscador</a>
+				<a href="#top" class="muted">Otro enlace</a>
+			</p>
+		</section>
+
+
+		<section id="buscador">
+			<h2>Formulario con validación</h2>
+			<form class="form">
+				<label>Correo
+					<input type="email" placeholder="tucorreo@ejemplo.com" required />
+				</label>
+				<label>Edad
+					<input type="number" min="1" max="120" />
+				</label>
+				<label>
+					<input type="checkbox" checked /> Acepto términos
+				</label>
+				<label>
+					<input type="radio" name="op" /> Opción 1
+				</label>
+				<label>
+					<input type="radio" name="op" disabled /> Opción 2 (deshabilitada)
+				</label>
+				<button type="submit">Buscar</button>
+			</form>
+		</section>
+
+
+		<section id="acordeon" class="accordion">
+			<h2>Acordeón CSS‑only</h2>
+
+
+			<details>
+				<summary>¿Origen del café?</summary>
+				<p>Proveniente de fincas a más de 1500 m s. n. m.</p>
+			</details>
+			<details open>
+				<summary>¿Tostado?</summary>
+				<p>Medio, para balance de aromas.</p>
+			</details>
+
+
+			<div class="tabs">
+				<a href="#tab1" class="tab" id="tab1">Perfil</a>
+				<a href="#tab2" class="tab" id="tab2">Notas</a>
+				<a href="#tab3" class="tab" id="tab3">Origen</a>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

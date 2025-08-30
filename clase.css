@@ -1,0 +1,12 @@
+body.page { font-family:'Segoe UI', sans-serif; background: radial-gradient(circle at top left, #fef9c3, #fde68a); margin:0; }
+.site-header { background:#f59e0b; padding:24px; text-align:center; }
+.titulo { color:#fff; font-size:40px; letter-spacing:2px; text-shadow:2px 2px 4px #92400e; }
+.subtitulo { color:#fff7ed; font-style:italic; }
+.menu-nav { text-align:center; margin:12px 0; }
+.menu-nav .btn { background:#fff; border:2px solid #b45309; padding:8px 14px; margin:0 6px; border-radius:8px; text-decoration:none; color:#7c2d12; }
+.panel { border:4px double #b45309; border-radius:16px; padding:16px; background:#fffaf0; margin-bottom:20px; }
+.item { margin-bottom:16px; padding:12px; background:#ffedd5; box-shadow:0 2px 8px rgba(0,0,0,0.15); }
+.heading { font-family: Georgia, serif; color:#7c2d12; }
+.texto { color:#374151; font-size:16px; }
+.list-item { margin:6px 0; }
+.site-footer { background:#7c2d12; color:#fef3c7; text-align:center; padding:12px; }
