@@ -1,0 +1,26 @@
+.btn{ text-decoration:none; display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--line); background:#fff; color:#111827; transition: transform .2s ease, box-shadow .2s ease }
+.btn--primary{ background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; border-color:transparent }
+.btn--ghost{ background:#fff; color:#111827 }
+.btn:is(:hover,:focus){ transform: translateY(-1px); box-shadow:0 10px 20px rgba(2,6,23,.12) }
+
+[data-grid="expo"] > .card[data-tipo="itinerante"]{ border-color:var(--brand-2) }
+[data-grid="expo"] > .card[data-tipo="permanente"]{ border-color:#0ea5e9 }
+[data-grid="expo"] > .card[data-tipo="temporal"]{ border-color:#f59e0b }
+
+.section :is(h2, h3){ color:#0b1220 }
+.section p + a.btn{ margin-top:.25rem }
+.section .card:first-child .btn{ background:#eef2ff }
+.section .card:nth-child(2) .badge{ background:#e0f2fe; color:#0e7490 }
+
+.table [data-moneda="PEN"]::after{ content:" PEN"; color:#64748b; font-size:.85em }
+
+input:required:invalid, select:required:invalid{ border-color:#ef4444 }
+input:required:valid, select:required:valid{ border-color:#10b981 }
+input:focus, select:focus{ outline:2px solid #93c5fd; outline-offset:2px }
+
+.tile img{ transition: transform .35s ease, filter .35s ease }
+.tile:is(:hover,:focus-within) img{ transform: scale(1.03); filter: saturate(1.15) }
+.tile figcaption{ transition: transform .25s ease, background .25s ease }
+.tile:is(:hover,:focus-within) figcaption{ transform: translateY(-2px); background:#fff }
+
+.callout h3::first-letter{ color:var(--brand); font-size:130% }

@@ -1,0 +1,8 @@
+@keyframes floaty{ from{ transform: translateY(0) } 50%{ transform: translateY(-6px) } to{ transform: translateY(0) } }
+.hero__title{ animation: floaty 6s ease-in-out infinite }
+
+@keyframes pulseBorder{ from{ box-shadow:0 0 0 0 rgba(20,184,166,.35) } to{ box-shadow:0 0 0 12px rgba(20,184,166,0) } }
+.card--destacada{ animation: pulseBorder 2.4s ease-out infinite }
+
+.btn--primary{ transition: transform .2s ease, filter .2s ease }
+.btn--primary:hover{ transform: translateY(-1px); filter: brightness(1.05) }

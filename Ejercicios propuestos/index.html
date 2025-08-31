@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Museo Pacífico — Arte y Ciencia Andina</title>
+  <link rel="preconnect" href="https://picsum.photos">
+  <link rel="stylesheet" href="./css/core.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/motion.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <nav class="topbar" aria-label="principal">
+      <a class="brand" href="#" title="Museo Pacífico">Museo Pacífico</a>
+      <ul class="menu">
+        <li><a href="#exposiciones">Exposiciones</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#entradas" data-cta="comprar">Entradas</a></li>
+      </ul>
+      <form class="search" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar…" />
+        <button class="btn btn--ghost" type="submit">Buscar</button>
+      </form>
+    </nav>
+
+    <section class="hero" id="hero">
+      <img class="hero__img" src="https://picsum.photos/seed/museo/1600/800" alt="Instalación de arte en sala principal" />
+      <div class="hero__overlay">
+        <h1 class="hero__title">Arte y Ciencia Andina</h1>
+        <p class="hero__lead">Explora la convergencia entre tradición y tecnología.</p>
+        <a class="btn btn--primary" href="#entradas">Comprar entradas</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="contenido">
+    <!-- 1) Uso intensivo de selectores y combinadores -->
+    <section id="exposiciones" class="section section--contrast" aria-labelledby="t-expo">
+      <h2 id="t-expo">Exposiciones</h2>
+      <ul class="cards" data-grid="expo">
+        <li class="card" data-tipo="permanente">
+          <h3 class="card__title">Cosmos Andino <span class="badge">Nuevo</span></h3>
+          <p>Observatorios, quipus y cartografías del cielo.</p>
+          <a class="btn btn--ghost" href="#galeria" aria-describedby="d1">Ver más</a>
+          <small id="d1" class="sr-only">Ir a la galería</small>
+        </li>
+        <li class="card card--destacada" data-tipo="itinerante">
+          <h3 class="card__title">Agua • Memoria <span class="badge badge--aqua">Top</span></h3>
+          <p>Instalaciones interactivas con sensores.</p>
+          <a class="btn btn--ghost" href="#galeria">Ver más</a>
+        </li>
+        <li class="card" data-tipo="temporal">
+          <h3 class="card__title">Textiles Vivos</h3>
+          <p>Tejidos de comunidades altoandinas; taller abierto.</p>
+          <a class="btn btn--ghost" href="#galeria">Ver más</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2) Galería: pseudo‑clases/elementos, regex de atributos, efectos de hover/focus -->
+    <section id="galeria" class="section" aria-labelledby="t-gal">
+      <h2 id="t-gal">Galería</h2>
+      <div class="masonry" data-cols>
+        <figure class="tile"><img src="https://picsum.photos/seed/gal1/600/360" alt="Pieza 1"><figcaption>Pieza 1</figcaption></figure>
+        <figure class="tile"><img src="https://picsum.photos/seed/gal2/600/360" alt="Pieza 2"><figcaption>Pieza 2</figcaption></figure>
+        <figure class="tile tile--tall"><img src="https://picsum.photos/seed/gal3/600/900" alt="Pieza 3"><figcaption>Pieza 3</figcaption></figure>
+        <figure class="tile"><img src="https://picsum.photos/seed/gal4/600/360" alt="Pieza 4"><figcaption>Pieza 4</figcaption></figure>
+        <figure class="tile"><img src="https://picsum.photos/seed/gal5/600/360" alt="Pieza 5"><figcaption>Pieza 5</figcaption></figure>
+      </div>
+      <p class="note">Haz hover/focus para ver <strong>overlay, zoom y transición</strong>.</p>
+    </section>
+
+    <!-- 3) Horarios/tabla con estilos avanzados, nth-child, sticky headers -->
+    <section id="horarios" class="section section--soft" aria-labelledby="t-hor">
+      <h2 id="t-hor">Horarios y tarifas</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr><th>Día</th><th>Apertura</th><th>Cierre</th><th>Tarifa</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Lun</td><td>10:00</td><td>18:00</td><td data-moneda="PEN">12.00</td></tr>
+            <tr><td>Mar</td><td>10:00</td><td>18:00</td><td data-moneda="PEN">12.00</td></tr>
+            <tr class="row--free"><td>Mié</td><td>10:00</td><td>18:00</td><td data-moneda="PEN">0.00</td></tr>
+            <tr><td>Jue</td><td>10:00</td><td>20:00</td><td data-moneda="PEN">15.00</td></tr>
+            <tr><td>Vie</td><td>10:00</td><td>20:00</td><td data-moneda="PEN">15.00</td></tr>
+            <tr><td>Sáb</td><td>09:00</td><td>21:00</td><td data-moneda="PEN">18.00</td></tr>
+            <tr><td>Dom</td><td>09:00</td><td>21:00</td><td data-moneda="PEN">18.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4) Formulario accesible con validación visual (pseudo‑clases) -->
+    <section id="entradas" class="section section--contrast" aria-labelledby="t-ent">
+      <h2 id="t-ent">Entradas</h2>
+      <form class="form" novalidate>
+        <div class="field">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+          <small class="hint">Se enviarán tus tickets aquí.</small>
+        </div>
+        <div class="field">
+          <label for="cantidad">Cantidad</label>
+          <input id="cantidad" name="cantidad" type="number" min="1" max="10" value="2" required />
+        </div>
+        <div class="field">
+          <label for="dia">Día</label>
+          <select id="dia" name="dia" required>
+            <option value="">Selecciona…</option>
+            <option value="sab">Sábado</option>
+            <option value="dom">Domingo</option>
+          </select>
+        </div>
+        <div class="actions">
+          <button class="btn btn--primary" type="submit">Pagar</button>
+          <a class="btn btn--ghost" href="#hero">Volver</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- 5) Sección recreada compleja: feature grid + callouts + testimonios -->
+    <section class="section" aria-labelledby="t-feature">
+      <h2 id="t-feature">Por qué visitarnos</h2>
+      <div class="feature-grid">
+        <article class="callout callout--tech"><h3>Interactividad</h3><p>Obras con sensores y luz.</p></article>
+        <article class="callout callout--heritage"><h3>Patrimonio</h3><p>Textiles y cerámicas.</p></article>
+        <article class="callout callout--kids"><h3>Niños</h3><p>Talleres lúdicos los fines de semana.</p></article>
+        <article class="callout callout--lab"><h3>Laboratorio</h3><p>Residencias artísticas + IA creativa.</p></article>
+      </div>
+
+      <div class="testimonials">
+        <figure class="quote">
+          <blockquote>Una experiencia inmersiva inolvidable.</blockquote>
+          <figcaption>— Revista Andina</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Curaduría impecable y didáctica.</blockquote>
+          <figcaption>— Crítica Cultural</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Museo Pacífico</footer>
+</body>
+</html>
