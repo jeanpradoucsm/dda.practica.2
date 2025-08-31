@@ -1,0 +1,17 @@
+:root{ --ink:#0F172A; --primary:#2563EB; --accent:#E11D48; --warn:#F59E0B; --line:#E5E7EB }
+*{ box-sizing:border-box }
+html,body{ margin:0; font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif; background:#F8FAFC; color:var(--ink) }
+.hero{ padding:28px; text-align:center; color:#0B1220; background:linear-gradient(135deg,#DBEAFE,#FCE7F3) }
+.content{ max-width:1100px; margin:0 auto; padding:24px }
+.swatches{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px }
+.swatch{ padding:18px; border-radius:14px; color:white; font-weight:700; text-align:center; box-shadow:0 10px 20px rgba(2,6,23,.08) }
+.swatch.ink{ background:#0F172A }
+.swatch.blue{ background:#2563EB }
+.swatch.rose{ background:#E11D48 }
+.swatch.amber{ background:#F59E0B }
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:16px }
+.card{ background:white; border:1px solid var(--line); border-radius:16px; padding:16px }
+.card.primary{ border-color:#2563EB }
+.card.accent{ border-color:#E11D48 }
+.card.warning{ border-color:#F59E0B }
+.btn{ display:inline-block; margin-top:8px; padding:8px 12px; border-radius:10px; background:#2563EB; color:white; text-decoration:none }

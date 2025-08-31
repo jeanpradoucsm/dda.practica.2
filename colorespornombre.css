@@ -1,0 +1,18 @@
+:root{ --ink:black; --muted:dimgray }
+*{ box-sizing:border-box }
+html,body{ margin:0; font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif; background:whitesmoke; color:var(--ink) }
+.hero{ padding:24px; text-align:center; color:midnightblue; background:linear-gradient(135deg, lavender, aliceblue) }
+.content{ max-width:1100px; margin:0 auto; padding:24px }
+.swatches{ display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:12px }
+.swatch{ padding:16px; border-radius:12px; color:white; font-weight:700; text-align:center }
+.swatch.skyblue{ background:skyblue }
+.swatch.seagreen{ background:seagreen }
+.swatch.gold{ background:gold; color:indigo }
+.swatch.tomato{ background:tomato }
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:16px }
+.card{ background:white; border:2px solid gainsboro; border-radius:16px; padding:16px; box-shadow:0 10px 20px rgba(0,0,0,.06) }
+.card h3{ margin:0 0 8px 0 }
+.card.info{ border-color:cornflowerblue }
+.card.success{ border-color:mediumseagreen }
+.card.warning{ border-color:goldenrod }
+.btn{ display:inline-block; margin-top:8px; padding:8px 12px; border-radius:10px; background:white; color:darkslategray; border:1px solid silver; text-decoration:none }
